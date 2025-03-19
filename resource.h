@@ -188,6 +188,8 @@ extern const char *RStateMeasuredValue;
 extern const char *RStateMoisture;
 extern const char *RStateMountingModeActive;
 extern const char *RStateMusicSync;
+extern const char *RStateMusicSyncEffect;
+extern const char *RStateMusicSyncSensitivity;
 extern const char *RStateOn;
 extern const char *RStateOpen;
 extern const char *RStateOpenBis;

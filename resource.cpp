@@ -149,6 +149,8 @@ const char *RStateMeasuredValue = "state/measured_value";
 const char *RStateMoisture = "state/moisture";
 const char *RStateMountingModeActive = "state/mountingmodeactive";
 const char *RStateMusicSync = "state/music_sync";
+const char *RStateMusicSyncEffect = "state/music_sync_effect";
+const char *RStateMusicSyncSensitivity = "state/music_sync_sensitivity";
 const char *RStateOn = "state/on";
 const char *RStateOpen = "state/open";
 const char *RStateOpenBis = "state/open_bis";
@@ -475,6 +477,8 @@ void initResourceDescriptors()
     rItemDescriptors.emplace_back(ResourceItemDescriptor(DataTypeInt16, QVariant::Double, RStateMoisture));
     rItemDescriptors.emplace_back(ResourceItemDescriptor(DataTypeBool, QVariant::Bool, RStateMountingModeActive));
     rItemDescriptors.emplace_back(ResourceItemDescriptor(DataTypeBool, QVariant::Bool, RStateMusicSync));
+    rItemDescriptors.emplace_back(ResourceItemDescriptor(DataTypeUInt32, QVariant::Double, RStateMusicSyncEffect, 0, 3));
+    rItemDescriptors.emplace_back(ResourceItemDescriptor(DataTypeUInt8, QVariant::Double, RStateMusicSyncSensitivity, 0, 2));
     rItemDescriptors.emplace_back(ResourceItemDescriptor(DataTypeBool, QVariant::Bool, RStateOn));
     rItemDescriptors.emplace_back(ResourceItemDescriptor(DataTypeBool, QVariant::Bool, RStateOpen));
     rItemDescriptors.emplace_back(ResourceItemDescriptor(DataTypeBool, QVariant::Bool, RStateOpenBis));

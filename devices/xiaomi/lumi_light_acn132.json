@@ -344,6 +344,66 @@
           }
         },
         {
+          "name": "state/music_sync_effect",
+          "parse": {
+            "fn": "zcl:attr",
+            "ep": 0,
+            "cl": "0xFCC0",
+            "mf": "0x115F",
+            "at": "0x051D",
+            "eval": "Item.val = Attr.val"
+          },
+          "read": {
+            "fn": "zcl:attr",
+            "ep": 0,
+            "cl": "0xFCC0",
+            "mf": "0x115F",
+            "at": [
+              "0x051D"
+            ]
+          },
+          "refresh.interval": 305,
+          "write": {
+            "fn": "zcl:attr",
+            "ep": 0,
+            "cl": "0xFCC0",
+            "mf": "0x115F",
+            "at": "0x051D",
+            "dt": "0x23",
+            "eval": "Math.max(0, Math.min(Item.val, 3))"
+          }
+        },
+        {
+          "name": "state/music_sync_sensitivity",
+          "parse": {
+            "fn": "zcl:attr",
+            "ep": 0,
+            "cl": "0xFCC0",
+            "mf": "0x115F",
+            "at": "0x051E",
+            "eval": "Item.val = Attr.val"
+          },
+          "read": {
+            "fn": "zcl:attr",
+            "ep": 0,
+            "cl": "0xFCC0",
+            "mf": "0x115F",
+            "at": [
+              "0x051E"
+            ]
+          },
+          "refresh.interval": 305,
+          "write": {
+            "fn": "zcl:attr",
+            "ep": 0,
+            "cl": "0xFCC0",
+            "mf": "0x115F",
+            "at": "0x051E",
+            "dt": "0x20",
+            "eval": "Math.max(0, Math.min(Item.val, 2))"
+          }
+        },
+        {
           "name": "state/x",
           "read": {
             "fn": "none"
