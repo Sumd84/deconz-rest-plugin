@@ -222,7 +222,7 @@
           }
         },
         {
-          "name": "config/color/gradient/pixel_count",
+          "name": "config/color/gradient/segments",
           "parse": {
             "fn": "zcl:attr",
             "ep": "0x01",

@@ -293,6 +293,7 @@ extern const char *RConfigColorCapabilities; // Deprecated
 extern const char *RConfigColorCtStartup;
 extern const char *RConfigColorExecuteIfOff;
 extern const char *RConfigColorGradientPixelCount;
+extern const char *RConfigColorGradientSegments;
 extern const char *RConfigColorGradientReversed;
 extern const char *RConfigColorXyStartupX;
 extern const char *RConfigColorXyStartupY;

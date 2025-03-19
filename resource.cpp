@@ -269,6 +269,7 @@ const char *RConfigColorCapabilities = "config/colorcapabilities";
 const char *RConfigColorCtStartup = "config/color/ct/startup";
 const char *RConfigColorExecuteIfOff = "config/color/execute_if_off";
 const char *RConfigColorGradientPixelCount = "config/color/gradient/pixel_count";
+const char *RConfigColorGradientSegments = "config/color/gradient/segments";
 const char *RConfigColorGradientReversed = "config/color/gradient/reversed";
 const char *RConfigColorXyStartupX = "config/color/xy/startup_x";
 const char *RConfigColorXyStartupY = "config/color/xy/startup_y";
@@ -583,6 +584,7 @@ void initResourceDescriptors()
     rItemDescriptors.emplace_back(ResourceItemDescriptor(DataTypeUInt16, QVariant::Double, RConfigColorCtStartup));
     rItemDescriptors.emplace_back(ResourceItemDescriptor(DataTypeBool,  QVariant::Bool, RConfigColorExecuteIfOff));
     rItemDescriptors.emplace_back(ResourceItemDescriptor(DataTypeUInt8, QVariant::Double, RConfigColorGradientPixelCount, 5, 50));
+    rItemDescriptors.emplace_back(ResourceItemDescriptor(DataTypeUInt8, QVariant::Double, RConfigColorGradientSegments, 5, 50));
     rItemDescriptors.emplace_back(ResourceItemDescriptor(DataTypeBool,  QVariant::Bool, RConfigColorGradientReversed));
     rItemDescriptors.emplace_back(ResourceItemDescriptor(DataTypeUInt16, QVariant::Double, RConfigColorXyStartupX));
     rItemDescriptors.emplace_back(ResourceItemDescriptor(DataTypeUInt16, QVariant::Double, RConfigColorXyStartupY));
