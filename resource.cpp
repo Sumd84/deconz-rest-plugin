@@ -163,6 +163,8 @@ const char *RStatePower = "state/power";
 const char *RStatePowerDivisor = "state/power_divisor";
 const char *RStatePresence = "state/presence";
 const char *RStatePresenceEvent = "state/presenceevent";
+const char *RStatePresetEffect = "state/preset_effect";
+const char *RStatePresetSpeed = "state/preset_speed";
 const char *RStatePressure = "state/pressure";
 const char *RStatePressureBis = "state/pressure_bis";
 const char *RStateProduction = "state/production";
@@ -492,6 +494,8 @@ void initResourceDescriptors()
     rItemDescriptors.emplace_back(ResourceItemDescriptor(DataTypeUInt16, QVariant::Double, RStatePowerDivisor));
     rItemDescriptors.emplace_back(ResourceItemDescriptor(DataTypeBool, QVariant::Bool, RStatePresence));
     rItemDescriptors.emplace_back(ResourceItemDescriptor(DataTypeString, QVariant::String, RStatePresenceEvent));
+    rItemDescriptors.emplace_back(ResourceItemDescriptor(DataTypeUInt8, QVariant::Double, RStatePresetEffect, 0, 6));
+    rItemDescriptors.emplace_back(ResourceItemDescriptor(DataTypeUInt32, QVariant::Double, RStatePresetSpeed, 0, 100));
     rItemDescriptors.emplace_back(ResourceItemDescriptor(DataTypeInt16, QVariant::Double, RStatePressure, 0, 32767));
     rItemDescriptors.emplace_back(ResourceItemDescriptor(DataTypeInt16, QVariant::Double, RStatePressureBis, 0, 32767));
     rItemDescriptors.emplace_back(ResourceItemDescriptor(DataTypeUInt64, QVariant::Double, RStateProduction));

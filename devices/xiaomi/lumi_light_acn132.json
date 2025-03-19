@@ -404,6 +404,66 @@
           }
         },
         {
+          "name": "state/preset_effect",
+          "parse": {
+            "fn": "zcl:attr",
+            "ep": 0,
+            "cl": "0xFCC0",
+            "mf": "0x115F",
+            "at": "0x051F",
+            "eval": "Item.val = Attr.val"
+          },
+          "read": {
+            "fn": "zcl:attr",
+            "ep": 0,
+            "cl": "0xFCC0",
+            "mf": "0x115F",
+            "at": [
+              "0x051F"
+            ]
+          },
+          "refresh.interval": 305,
+          "write": {
+            "fn": "zcl:attr",
+            "ep": 0,
+            "cl": "0xFCC0",
+            "mf": "0x115F",
+            "at": "0x051F",
+            "dt": "0x23",
+            "eval": "Math.max(0, Math.min(Item.val, 6))"
+          }
+        },
+        {
+          "name": "state/preset_speed",
+          "parse": {
+            "fn": "zcl:attr",
+            "ep": 0,
+            "cl": "0xFCC0",
+            "mf": "0x115F",
+            "at": "0x0520",
+            "eval": "Item.val = Attr.val"
+          },
+          "read": {
+            "fn": "zcl:attr",
+            "ep": 0,
+            "cl": "0xFCC0",
+            "mf": "0x115F",
+            "at": [
+              "0x0520"
+            ]
+          },
+          "refresh.interval": 305,
+          "write": {
+            "fn": "zcl:attr",
+            "ep": 0,
+            "cl": "0xFCC0",
+            "mf": "0x115F",
+            "at": "0x0520",
+            "dt": "0x20",
+            "eval": "Math.max(0, Math.min(Item.val, 100))"
+          }
+        },
+        {
           "name": "state/x",
           "read": {
             "fn": "none"

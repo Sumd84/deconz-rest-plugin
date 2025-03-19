@@ -202,6 +202,8 @@ extern const char *RStatePower;
 extern const char *RStatePowerDivisor;
 extern const char *RStatePresence;
 extern const char *RStatePresenceEvent;
+extern const char *RStatePresetEffect;
+extern const char *RStatePresetSpeed;
 extern const char *RStatePressure;
 extern const char *RStatePressureBis;
 extern const char *RStateProduction;
